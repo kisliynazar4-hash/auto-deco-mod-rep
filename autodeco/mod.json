@@ -1,0 +1,59 @@
+{
+	"geode": "4.0.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"version": "v1.0.0",
+	"id": "yourname.autodeco",
+	"name": "Auto Deco",
+	"developer": "yourname",
+	"description": "Select blocks in the editor, press Auto Deco in the pause menu, and it scatters decoration around them.",
+	"settings": {
+		"density": {
+			"type": "int",
+			"name": "Density",
+			"description": "Deco objects placed per selected object.",
+			"default": 3,
+			"min": 1,
+			"max": 10,
+			"control": { "slider": true }
+		},
+		"ids": {
+			"type": "string",
+			"name": "Deco Object IDs",
+			"description": "Comma-separated object IDs to use as decoration (e.g. 1,40,467).",
+			"default": "1,40"
+		},
+		"min-scale": {
+			"type": "float",
+			"name": "Min Scale",
+			"description": "Smallest scale of placed objects.",
+			"default": 0.3,
+			"min": 0.1,
+			"max": 2.0
+		},
+		"max-scale": {
+			"type": "float",
+			"name": "Max Scale",
+			"description": "Largest scale of placed objects.",
+			"default": 0.8,
+			"min": 0.1,
+			"max": 2.0
+		},
+		"random-rotation": {
+			"type": "bool",
+			"name": "Random Rotation",
+			"description": "Rotate placed objects in 15 degree steps.",
+			"default": true
+		},
+		"no-touch": {
+			"type": "bool",
+			"name": "No Touch",
+			"description": "Make placed objects non-solid (pure decoration).",
+			"default": true
+		}
+	}
+}
